@@ -80,5 +80,21 @@ public class Pattern3 {
             }
             System.out.println();
         }
+        System.out.println();
+
+        /*
+        1
+        2 3
+        4 5 6
+        7 8 9 10
+         */
+        int z=5,g=1;
+        for(int i=1;i<=z;i++){
+            for (int j=1;j<=i;j++){
+                System.out.print(g+" ");
+                g++;
+            }
+            System.out.println();
+        }
     }
 }
