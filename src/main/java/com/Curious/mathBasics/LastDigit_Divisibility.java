@@ -44,5 +44,20 @@ public class LastDigit_Divisibility {
             y=y/10;
         }
         System.out.println("Count Odd Digits "+count1+" ");
+
+
+        //kth digit from right of ApowB
+        int a=3,b=3,k=1,count2=0;
+        double ans=0;
+        ans=Math.pow(a,b);
+        ans=Math.floor(ans);
+        while(ans>0){
+            int ld=(int) (ans%10);
+            count2++;
+            if(count2==k){
+                System.out.println("kth digit is "+ld);
+            }
+            ans=ans/10;
+        }
     }
 }
