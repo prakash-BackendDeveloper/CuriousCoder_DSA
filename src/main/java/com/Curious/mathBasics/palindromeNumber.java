@@ -94,5 +94,17 @@ public class palindromeNumber {
             System.out.println("Mid Element " + e);
         }
 
+        System.out.println("series sum");
+        int t=5;
+        long sum4=0,tsum=0,psum=0;
+
+        for(long i=1;i<=t;i++){
+            sum4=sum4+i;
+            psum=sum4+ psum;
+            System.out.println(psum);
+        }
+
+        System.out.println(psum);
+
     }
 }
