@@ -80,5 +80,19 @@ public class palindromeNumber {
             System.out.println("Not Perfect Number");
         }
 
+        //mid element
+        int q=10,w=20,e=30;
+        int max=Math.max(q,Math.max(w,e));
+        int min=Math.min(q,Math.min(w,e));
+        if(q!=max && q!=min){
+            System.out.println("Mid Element "+ q);
+        }
+        else if(w!=max && w!=min){
+            System.out.println("Mid Element "+ w);
+        }
+        else {
+            System.out.println("Mid Element " + e);
+        }
+
     }
 }
