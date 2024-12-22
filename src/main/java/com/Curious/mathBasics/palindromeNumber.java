@@ -45,19 +45,40 @@ public class palindromeNumber {
 
         //Count divisors and divisible by 3
         int  count1=0;
-        int N=18;
+        int N=6;
         for (int j = 1; j * j <= N; j++) {
             if (N % j == 0) {
                 if(j%3==0){
                     count1++;
-                    System.out.println("ans " +j);
+                    System.out.println("ans iii " +j);
                 }
-                if((N/j)%3==0){
+                if((N/j)%3==0 && j!=(N/j)){
                         count1++;
-                        System.out.println("ans " +(N/j));
+                        System.out.println("ans iii" +(N/j));
                     }
             }
         }
         System.out.println("ans " +count1);
+
+
+        //Perfect Number - sum of all divisor except N is called perfect number
+        int z=8,sum2=0;
+        for (int j = 2; j * j <= z; j++) {
+            if (z % j == 0) {
+                if (j * j == z) {
+                    sum2+=j;
+                } else {
+                   sum2+=j;
+                   sum2+=z/j;
+                }
+            }
+        }
+        if(sum2+1==z){
+            System.out.println("Perfect Number");
+        }
+        else{
+            System.out.println("Not Perfect Number");
+        }
+
     }
 }
