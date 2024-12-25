@@ -95,10 +95,10 @@ public class palindromeNumber {
         }
 
         System.out.println("series sum");
-        int t=5;
+        int t=2 ;
         long sum4=0,tsum=0,psum=0;
 
-        for(long i=1;i<=t;i++){
+        for(long i=1;i<=t;i+=2){
             sum4=sum4+i;
             psum=sum4+ psum;
             System.out.println(psum);
@@ -106,5 +106,14 @@ public class palindromeNumber {
 
         System.out.println(psum);
 
+        System.out.println("Another series sum");
+
+        int sum5=1,psum1=1,s=2,sum6=1;
+        for(int i=2;i<=s;i++){
+            psum1=psum1+2;
+            sum5=sum5+psum1;
+            sum6=sum6+sum5;
+        }
+        System.out.println(sum6);
     }
 }
