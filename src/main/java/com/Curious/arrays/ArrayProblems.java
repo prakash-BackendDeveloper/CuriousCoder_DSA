@@ -1,4 +1,4 @@
-package com.Curious.arraysStrings;
+package com.Curious.arrays;
 
 public class ArrayProblems {
     public static void main(String[] args) {
