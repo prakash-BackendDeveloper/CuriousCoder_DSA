@@ -41,7 +41,7 @@ public class MergeSorting {
         merge(a,start,mid,last);
     }
     public static void main(String[] args) {
-        int a[]={4,1,5,3,90,65,34,8,9};
+        int a[]={10,5,12,1,3,17,45,6};
         mergeSort(a,0,a.length-1);
         for(int i=0; i<a.length; i++){
             System.out.print(a[i]+" ");
